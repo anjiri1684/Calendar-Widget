@@ -1,0 +1,75 @@
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  html * {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: #A9DDEB;
+    display: grid;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.6rem;
+    min-height: 100vh;
+    place-content: center;
+  }
+  
+  .calendar {
+    background-color: #FFF;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.8rem 1.6rem rgba(35, 131, 157, 0.2);
+    padding: 3.2rem;
+  }
+  .calendar__header {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.2rem;
+    padding: 0 0.4rem 1.2rem;
+    text-transform: uppercase;
+  }
+  .calendar__day-names {
+    border-bottom: 0.1rem solid #828889;
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 0.8rem;
+    padding: 0.8rem 0;
+  }
+  .calendar__day-name {
+    aspect-ratio: 1;
+    color: #828889;
+    font-weight: normal;
+    text-align: center;
+    width: 2.4rem;
+  }
+  .calendar__day_numbers {
+    display: flex;
+    flex-direction: column;
+  }
+  .calendar__day-numbers-row {
+    display: flex;
+    gap: 1.2rem;
+    padding: 0.6rem 0;
+  }
+  .calendar__day-numbers-row:first-child {
+    justify-content: flex-end;
+  }
+  .calendar__day-number {
+    align-content: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    color: #000;
+    display: flex;
+    line-height: 1.4;
+    text-align: center;
+    width: 2.4rem;
+  }
+  .calendar__day-number--current {
+    background-color: #23839D;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.4rem #23839D;
+    color: #FFF;
+  }
